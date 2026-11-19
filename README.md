@@ -1,7 +1,15 @@
-# news-image-20261119 — "THE WORLD TODAY"
+# news-image-20261119 — "THE WORLD TODAY" (v2)
 
 A program that draws a newspaper front page summing up the world news of
 Thursday 19 November 2026, as a single 1024×1024 PNG.
+
+v2 ("optimization round", supersedes v1): stronger hero composition — the
+Vice City sunset art now stands alone above a dedicated headline block
+("GTA VI ARRIVES" + two-line subline) instead of text over the art; the
+date banner is bolder; every panel carries its own illustration (missile
+arcs over Qeshm, EU stars with rising bars, the Gaza Yellow Line, the
+Capitol dome, the Akvan spiral, Voyager 1's dish); decks are full
+sentences, all uppercased by the renderer so nothing renders blank.
 
 ## Run
 
@@ -48,8 +56,8 @@ MAKEFUN_OUTPUT_DIR=out2 node main.ts
 sha256sum out1/entry.png out2/entry.png   # identical
 ```
 
-Result: 1024×1024 PNG, 24,335 bytes (limit 1,048,576),
-sha256 `94c0746f61e9fb2fb81b3e12b114e98f597b4e2924beebb4b5c50b4e7aa4564b`,
+Result (v2): 1024×1024 PNG, 26,148 bytes (limit 1,048,576),
+sha256 `a11b21fa6e5c0a11e2cafb0a8d3ba09d37195060f249dbf6a6daae2c6b646fd4`,
 identical across both runs.
 
 ## License
